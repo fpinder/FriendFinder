@@ -3,6 +3,7 @@ node_modules
 .DS_Store
 .env
 Notes.txt
+TEMP
 
 # Dependency directories
 node_modules/
