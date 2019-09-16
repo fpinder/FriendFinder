@@ -24,7 +24,7 @@
 
 <a href="#"><img src="https://github.com/fpinder/FriendFinder/blob/master/app/public/images/compatible.jpg" alt="Compatible Match"></a>
 
-*The application FriendFinder is organized with the following struiture:* 
+**The application FriendFinder is organized with the following struiture:** 
 
 ```
 FriendFinder
