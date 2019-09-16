@@ -133,22 +133,19 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        width: 100%;
 
-    }
-
+    .container,
     body {
+        width: 100%;
         background-size: 100%
     }
 }
 
 @media screen and (max-width: 640px) {
-    .container {
-        width: 100%;
-    }
 
+    .container,
     body {
+        width: 100%;
         background-size: 100%;
     }
 }
