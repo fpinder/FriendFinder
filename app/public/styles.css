@@ -16,9 +16,16 @@ body {
        on the container's size */
     background-size: cover;
 
+
     /* Set a background color that will be displayed
        while the background image is loading */
     background-color: #464646;
+
+}
+
+.container {
+    width: 960;
+    margin: 0px, auto;
 }
 
 .jumbotron {
@@ -113,4 +120,34 @@ a {
     border: 2px solid rgb(141, 4, 4);
     border-radius: 10px;
     /* box-sizing: border-box; */
+}
+
+@media screen and (max-width: 980px) {
+    .container {
+        width: 100%
+    }
+
+    background-image {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    body {
+        background-size: 100%
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 100%;
+    }
+
+    body {
+        background-size: 100%
+    }
 }
