@@ -60,7 +60,7 @@ FriendFinder
 
 **_Data excerpts_**
 
-*The application's data is stored in side of `app/data/friends.js` as an array of objects.*
+*The application's data is stored in side of `app/data/friends.js` as an array of objects.* 
 
  ```
  [{
