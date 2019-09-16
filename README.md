@@ -4,7 +4,7 @@
 
 **Object**
 
-*The Application [FriendFinder](https://secret-shelf-96318.herokuapp.com/) is a compatibility-based application hosted on Heroku. The user can connect form the home to the survey page. This application will take in results from your users' surveys page then compare their answers with those from other users. The application will then display the name and picture of the user with the best overall match.*
+*The Application [FriendFinder](https://secret-shelf-96318.herokuapp.com/) is a compatibility-based application hosted on Heroku. The user can connect from the home page to the survey page. This application will take in results from your users' surveys page then compare their answers with those from other users. The application will then display the name and picture of the user with the best overall match.*
 
 `Home Page`
 
@@ -14,15 +14,20 @@
 
 <a href="#"><img src="https://github.com/fpinder/FriendFinder/blob/master/app/public/images/survey.jpg" alt="Survey Page"></a>
 
-*The application also has an error checking process to ensure the all required fills are fields out before the page is submitted*
+*The application also has an error checking process to ensure that all required are fields completed before the page is submitted*
 
 `Error Checking`
 
 <a href="#"><img src="https://github.com/fpinder/FriendFinder/blob/master/app/public/images/erroChecking.jpg" alt="error checking"></a>
 
+`Compatible Match`
+
+<a href="#"><img src="https://github.com/fpinder/FriendFinder/blob/master/app/public/images/compatible.jpg" alt="Compatible Match"></a>
+
 *The application FriendFinder is organized with the following struiture:* 
 
-```FriendFinder
+```
+FriendFinder
     - .gitignore
     - app
       - data
@@ -40,23 +45,25 @@
 
 
 **_Technology used_**
-This app uses JavaScript, Node.js and 3 NPM packages: Express, Body-parser, and Path
+
+*This app uses JavaScript, Node.js and 3 NPM packages: Express, Body-parser, and Path*
 
  Files Used   |  Role in the App                                                                  |
 | ------------ | -------------------------------------------------------------------------------------- |
 | node_modules | node modules includes the  NPM packages |
-| express         | use Express to handle routing |
+| express         | used to handle routing |
 | .gitignore   | This will tell git not to track these files, and thus they won't be committed to Github |
 | package.json | JSON Source file the has all the dependencies.                    |
 | bodyParser  | Used to sets up the Express app to handle data parsing. |
 | htmlRoutes.js  | Used for the routing and displaying the survey page | 
-| apiRoutes.js   | The sql file to create the database and contents. |
+| apiRoutes.js   | Used  displaying a JSON of all possible friends, handle incoming survey results, and handle the compatibility logic  |
 
 **_Data excerpts_**
 
-*The application's data isvstored nside of app/data/friends.js as an array of objects.:*
+*The application's data is stored in side of `app/data/friends.js` as an array of objects.*
 
- ```[{
+ ```
+ [{
         name: "Taylor Swift",
         photo: "https://s2.r29static.com/bin/entry/6e5/720x864,85/2201206/image.webp",
         scores: [3, 4, 5, 2, 1, 3, 4, 5, 2, 1, ]
@@ -90,6 +97,7 @@ This app uses JavaScript, Node.js and 3 NPM packages: Express, Body-parser, and 
         scores: [3, 2, 4, 1, 5, 3, 2, 4, 1, 5]
     },
 ]
+
 ```
 
 #
