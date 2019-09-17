@@ -123,13 +123,13 @@ a {
 }
 
 @media screen and (max-width: 980px) {
-    .container {
-        width: 100%
+
+    .container,
+    body {
+        width: 100%;
+        background-size: 100%
     }
 
-    background-image {
-        width: 100%
-    }
 }
 
 @media screen and (max-width: 768px) {
